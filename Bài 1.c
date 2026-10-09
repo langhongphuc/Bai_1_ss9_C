@@ -17,7 +17,7 @@ int main() {
     char maCanTim[10];
     float trongLuongMoi;
 
-    printf("=== HE THONG CHECK-IN VE MAY BAY ===\n");
+    printf("--- HE THONG CHECK-IN VE MAY BAY ---\n");
 
     do {
         printf("Nhap so luong ve (1 - 50): ");
@@ -50,7 +50,6 @@ int main() {
 
         while (getchar() != '\n');
 
-        // 3. Tinh phi phu thu
         if (ds[i].trongLuongHanhLy > 7.0) {
             ds[i].phiPhuThu =
                 (long)((ds[i].trongLuongHanhLy - 7.0) * 50000);
@@ -59,7 +58,7 @@ int main() {
         }
     }
 
-    printf("\n=== DANH SACH VE MAY BAY CHUYEN BAY ===\n");
+    printf("\n--- DANH SACH VE MAY BAY CHUYEN BAY ---\n");
 
     printf("-----------------------------------------------------------------------------------------\n");
     printf("%-5s %-10s %-25s %-12s %-12s %-15s\n",
@@ -79,7 +78,7 @@ int main() {
 
     printf("-----------------------------------------------------------------------------------------\n");
 
-    printf("\n=== CAP NHAT THONG TIN HANH LY ===\n");
+    printf("\n--- CAP NHAT THONG TIN HANH LY ---\n");
     printf("Nhap ma PNR can cap nhat: ");
 
     fgets(maCanTim, sizeof(maCanTim), stdin);
@@ -117,7 +116,7 @@ int main() {
             printf("Cap nhat thanh cong! Phi phu thu moi: %ld VND\n",
                    ds[viTri].phiPhuThu);
 
-            printf("\n=== DANH SACH VE MAY BAY SAU CAP NHAT ===\n");
+            printf("\n--- DANH SACH VE MAY BAY SAU CAP NHAT ---\n");
 
             printf("-----------------------------------------------------------------------------------------\n");
             printf("%-5s %-10s %-25s %-12s %-12s %-15s\n",
